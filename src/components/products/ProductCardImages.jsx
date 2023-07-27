@@ -25,7 +25,7 @@ const ProductCardImages = () => {
                 {ProductImages?.map((item, index)=>{
                    return (
                    
-                        <Octicons name="dot-fill" size={30} color={selectedImage == item.id ? 'black' : 'white'} style={{position:'absolute', bottom:10}} />
+                        <Octicons key={item?.id} name="dot-fill" size={30} color={selectedImage == item.id ? 'black' : 'white'} style={{position:'absolute', bottom:10}} />
                     
                    )
                 })}
