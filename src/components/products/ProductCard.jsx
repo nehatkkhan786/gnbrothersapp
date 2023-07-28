@@ -14,6 +14,7 @@ const ProductCard = ({productTitle, productImageUrl, productPrice}) => {
      
     <View  style={[styles.customBg, {alignItems:'flex-start', justifyContent:'flex-start', width:'100%', paddingHorizontal:10, paddingVertical:5,}]}>
         <Text style={{fontSize:18,fontWeight:500, color:'#555'}}>{productTitle}</Text>
+        
         <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', width:'100%',}}>
             <Text style={{fontSize:16, fontWeight:500, color:'#555'}}>Rs {productPrice}</Text>
             <TouchableOpacity style={{backgroundColor:'#000000', width:35, height:35, justifyContent:'center', alignItems:'center', borderRadius:17}}>
