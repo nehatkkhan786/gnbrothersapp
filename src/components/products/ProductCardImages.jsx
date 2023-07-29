@@ -33,7 +33,7 @@ const ProductCardImages = () => {
 
               <Image
                 source={{ uri: item.imgUrl }}
-                style={{width:'100%', height:'100%', resizeMode:'contain'  }}
+                style={{width:'100%', height:'100%', contentFit:'contain'  }}
                 />
             </View>
             </>
@@ -50,7 +50,7 @@ const ProductCardImages = () => {
       >
         {ProductImages?.map((i, index) => {
           return (
-            <Octicons name="dot-fill" size={16} color={selectedImage === index ? 'gray' : 'white'}/>
+            <Octicons key={index} name="dot-fill" size={16} color={selectedImage === index ? 'gray' : 'white'}/>
           )
         })}
       </View>

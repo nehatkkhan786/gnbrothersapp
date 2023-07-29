@@ -2,16 +2,18 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-nativ
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 
-const SearchBox = () => {
+const SearchBox = ({filterComp}) => {
   return (
     <View style={styles.searchWrapper}>
       <View style={styles.searchContainer}>
         <AntDesign name="search1" size={24} color="#7F7F7F" />
         <TextInput placeholder='Search Products' style={styles.searchinput}/>
       </View>
-      <TouchableOpacity style={{ backgroundColor:'#fff',  width:50, height:50 , borderRadius:25, alignItems:"center", justifyContent:'center',}}>
+
+      {filterComp}
+      {/* <TouchableOpacity style={{ backgroundColor:'#fff',  width:50, height:50 , borderRadius:25, alignItems:"center", justifyContent:'center',}}>
         <AntDesign name="filter" size={28} color="#7F7F7F" style={{alignSelf:'center'}}/>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   )
 }
